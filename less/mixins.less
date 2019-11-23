@@ -1,1 +1,20 @@
 // Mixins Here
+.btn(@Tcolor,@backColor,@fColor ){
+    //Tcolor=Text Color
+    //backColor = background color of button
+    //fColor = Fade to color
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 2em;
+    background-color: @backColor;
+    color:@Tcolor;
+    cursor: pointer;
+    text-align: center;
+  
+    &:hover {
+    // The compiled color returned is #006667 
+      background-color: darken(@fColor, 5%)
+    }
+  }//btn---------------------
+
+  .border-radius (@radius) { border-radius: @radius; }
