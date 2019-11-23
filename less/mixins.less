@@ -1,5 +1,5 @@
 // Mixins Here
-.btn(@Tcolor,@backColor,@fColor ){
+.btn(@Tcolor,@backColor ){
     //Tcolor=Text Color
     //backColor = background color of button
     //fColor = Fade to color
@@ -12,8 +12,8 @@
     text-align: center;
   
     &:hover {
-    // The compiled color returned is #006667 
-      background-color: darken(@fColor, 5%)
+      color:@backColor  ;
+      background-color: @Tcolor;
     }
   }//btn---------------------
 

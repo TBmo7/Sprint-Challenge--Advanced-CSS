@@ -249,13 +249,14 @@ footer {
   border-radius: 10px;
   font-size: 2em;
   background-color: #23293B;
-  color: white;
+  color: #F6F6F6;
   cursor: pointer;
   text-align: center;
   width: 40%;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #000072;
+  color: #23293B;
+  background-color: #F6F6F6;
 }
 .home .walk .walk-img {
   width: 46%;
