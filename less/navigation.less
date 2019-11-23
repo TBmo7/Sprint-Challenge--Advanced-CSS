@@ -1,1 +1,44 @@
 // Navigation code here
+nav{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    p{
+        height:20%;
+        padding:1%;
+        font-family: 'Russo One', sans-serif;
+        color: @header-font-color;
+        font-size:3.8em;
+    }
+    ul{
+        .border-radius(4px);
+        display:flex;
+        justify-content: space-around;
+        width:400px;
+        background-color:#edece8;
+        
+        li{
+            
+            a{
+                text-decoration: none;
+                font-family: 'Ubuntu', sans-serif;
+                color:#22283A;
+                font-size: 1.7em;
+                .border-radius(5px);
+                &:hover{
+                    animation:navHov 4s , navText 4s;
+                    
+                    
+                }
+              
+                
+                
+                
+                
+            }
+
+        }
+    }
+}
