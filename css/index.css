@@ -1,3 +1,19 @@
+@keyframes navHov {
+  from {
+    background-color: #edece8;
+  }
+  to {
+    background-color: #22283A;
+  }
+}
+@keyframes navText {
+  from {
+    color: #22283A;
+  }
+  to {
+    color: #edece8;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,6 +186,38 @@ p {
     width: 500px;
   }
 }
+input[type=text],
+select,
+textarea {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+input[type=submit] {
+  background-color: #22283A;
+  color: #edece8;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #5E6164;
+}
 nav {
   width: 100%;
   display: flex;
@@ -194,8 +242,12 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
-  color: #23293B;
+  color: #22283A;
   font-size: 1.7em;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  animation: navHov 4s , navText 4s;
 }
 footer {
   color: #22283B;
@@ -212,6 +264,11 @@ footer {
     display: flex;
     flex-direction: column;
   }
+}
+.home .formContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 .home .intro img {
   box-sizing: border-box;
